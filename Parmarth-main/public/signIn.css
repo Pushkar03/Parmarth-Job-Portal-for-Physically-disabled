@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(219, 226, 226);
+}
+
+.row{
+    border-radius: 30px;
+}
+
+.separate{
+    background:white;
+    border-radius:20px;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+.img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+ .btn1{
+    border:none;
+    outline:none;
+    height:50px;
+    width:100%;
+    background-color: rgb(80, 80, 185);
+    color:white;
+    border-radius: 4px;
+    font-weight:bold;
+}
+
+.btn1:hover{
+    background-color: white;
+    border:1px solid;
+    color:black;
+} 
+
+.logo{
+    width:50%;
+    height:70px;
+    padding:10px;
+}
+
+.welcome{
+    margin-top:100px;
+
+}
+
+a:link{
+    text-decoration: none;
+} 
+

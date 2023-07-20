@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <title></title>
+    <!-- CSS only -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <a  class="active" href="#"><img src="images/Frame 415.png" class="logo"></a>
+			<ul class="nav-links">
+        <li><a href="/about">About Us</a></li>
+				<li><a href="/job">Jobs</a></li>
+				<li><a href="/job-open"><button class="btn bg-white">Post a job</button></a></li>
+        <li><i class="far fa-bell"></i></li>
+			</ul>
+		  <a href="/profile"><img src="images/profile (1).png"></a>
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+
+    <p class="about_us_heading">Post Your <br/><span> Job Opening</span></p>
+    
+    <form action="/job-open" method="post">
+      <div class="company_main_content container-xxl job_open_main_container">
+        <section class="job_open_job_info">
+          <h1 class="job_open_section_title">Job Information</h1>
+          <div class="job_open_section_main_table">
+            <!-- job title -->
+            <div class="job_open_content_type_one">
+              <h2>Job Title</h2>
+              <input
+                type="text"
+                placeholder="Job title"
+                class="job_open_content"
+                name="jobTitle"
+              />
+            </div>
+            <!-- job category -->
+            <div class="job_open_content_type_two">
+              <h2>Job Category</h2>
+              <select name="jobCategory" id="" placeholder="">
+                Full-time
+                <option>Full-time</option>
+                <option>Part-time</option>
+              </select>
+            </div>
+            <!-- job type -->
+            <div class="job_open_content_type_two">
+              <h2>Job Type</h2>
+              <select name="jobType" id="" placeholder="">
+                Mid-level
+                <option>Mid-level</option>
+                <option>Entry-level</option>
+              </select>
+            </div>
+            <!-- Seniority/Experience Level -->
+            <div class="job_open_content_type_two">
+              <h2>Seniority/Experience Level</h2>
+              <select name="experience" id="" placeholder="">
+                3+ years
+                <option>0-1 years</option>
+                <option>1-3 years</option>
+                <option>3-7 years</option>
+                <option>7+ years</option>
+              </select>
+            </div>
+            <!-- Job Location -->
+            <div class="job_open_content_type_two">
+              <h2>Job Location</h2>
+              <input placeholder="Your Location" type="text" name="jobLocation"/>
+            </div>
+            <!-- Job Salary -->
+            <div class="job_open_content_type_two">
+              <h2>Job Salary</h2>
+              <input placeholder="Job salary" type="text" name="jobSalary"/>
+            </div>
+            <!-- Disability -->
+            <div class="job_open_content_type_two">
+              <h2>Disability</h2>
+              <select name="disability" id="" placeholder="Visually impaired">
+                <option>Visually impaired</option>
+                <option>Hard of Hearing</option>
+                <option>Wheelchair bound</option>
+                <option>Dumb and Deaf</option>
+              </select>
+            </div>
+            <!-- Application Submission URL -->
+            <div class="job_open_content_type_one">
+              <h2>Application Submission URL</h2>
+              <input
+                type="text"
+                placeholder="URL"
+                class="job_open_content"
+                name = "application_url"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="job_open_company_info">
+          <h1 class="job_open_section_title">Company Information</h1>
+          <div class="job_open_section_main_table">
+            <!--Company Name -->
+            <div class="job_open_content_type_two">
+              <h2>Company Name</h2>
+              <input placeholder="Company name" type="text" name="companyName"/>
+            </div>
+            <!-- Website URL -->
+            <div class="job_open_content_type_two">
+              <h2>Website URL</h2>
+              <input placeholder="Website" type="text" name="website"/>
+            </div>
+            <!-- Company Size-->
+            <div class="job_open_content_type_two">
+              <h2>Company Size</h2>
+              <select  id="" placeholder="" name="companySize">
+                <option>1-100</option>
+                <option>100-500</option>
+                <option>500+</option>
+              </select>
+            </div>
+            <!-- Company Email -->
+            <div class="job_open_content_type_two">
+              <h2>Company Email</h2>
+              <input placeholder="Your email" type="text" name="companyEmail"/>
+            </div>
+            <!-- Company Bio -->
+            <div class="job_open_content_type_one">
+              <h2>Company Bio</h2>
+              <textarea
+                placeholder="Company bio"
+                type="text"
+                style="height: 200px"
+                name="bio"
+              ></textarea>
+            </div>
+            <!-- Company Logo URL -->
+            <div class="job_open_content_type_two">
+              <h2>Company Logo URL</h2>
+              <input placeholder="Logo URL" type="text" name="companyLogo"/>
+            </div>
+          </div>
+        </section>
+        <section class="job_open_job_des">
+          <h1 class="job_open_section_title">Job Description</h1>
+          <!-- Responsibilities -->
+          <div class="job_open_content_type_one">
+            <h2>Responsibilities</h2>
+            <textarea placeholder="Responsibilities" type="text" name="responsibilities"></textarea>
+          </div>
+          <!-- Required Skills and Experience -->
+          <div class="job_open_content_type_one">
+            <h2>Required Skills and Experience</h2>
+            <textarea placeholder="Skills required" type="text" name="skill"></textarea>
+          </div>
+          <!-- About Job Role-->
+          <div class="job_open_content_type_one">
+            <h2>About Job Role</h2>
+            <textarea placeholder="Job role" type="text" name="jobRole"></textarea>
+          </div>
+          <!--Ideal Candidate-->
+          <div class="job_open_content_type_one">
+            <h2>Ideal Candidate</h2>
+            <textarea placeholder="Ideal candidate" type="text" name="ideal"></textarea>
+          </div>
+          <!--Perks and Benifits-->
+          <div class="job_open_content_type_one">
+            <h2>Perks and Benifits</h2>
+            <textarea placeholder="Benefits" type="text" name="perks"></textarea>
+          </div>
+          <!--Hiring Process/Stages-->
+          <div class="job_open_content_type_one">
+            <h2>Hiring Process/Stages</h2>
+            <textarea placeholder="Hiring process" type="text" name="hiring"></textarea>
+          </div>
+          <!--Hiring Process/Stages-->
+          <div class="job_open_content_type_button">
+            <!--  -->
+            <button class="job_open_content_submit_btn" type="submit">
+              Submit
+            </button>
+          </div>
+        </section>
+      </div>
+    </form>
+    <section class="footer">
+      <div class="grid-wrapper">
+        <div class="col-4 footer1">
+          <span><h1><img src="images/Logo.png" style="width:45px; height:45px;"/>&nbsp;Parmarth</h1></span>
+          <div class="logos">
+          <img src="images/logo5.png">
+          <img src="images/logo1.png">
+          <img src="images/logo2.png">
+          <img src="images/logo3.png">
+          <img src="images/logo4.png">
+        </div>
+      </div>
+          <div class="col-4 footer2">
+              <h1>Get In Touch</h1>
+              <a href="/about"><h3>About us</h3></a>
+              <a href="/about"><h3>Our Mission</h3></a>
+              <a href="/about"><h3>Contact Us</h3></a>
+              <h3>How To Use</h3>
+          </div>
+          <div class="col-4 footer2">
+            <h1>Employer</h1>
+            <a href="/job-open"><h3>Post a Job</h3></a>
+            <h3>Help</h3>
+            <h3>Chat With Us</h3>
+            <h3>Grievances</h3>
+          </div>
+    <div class="col-4 footer2">
+      <h1>Employee</h1>
+      <a href="/profile"><h3>Profile</h3></a>
+      <a href="/profile"><h3>Your Account</h3></a>
+      <h3>Grievances</h3>
+      <a href="/job"><h3>Find a Job</h3></a> 
+      <h3>Chat With Us</h3>
+  </div>
+</div>
+</section> 
+  <footer id="copyright">
+     <h3>Made by Team Spam Bytes @2022. All Rights Reserved.</h3>
+</footer>
+
+    
+  </body>
+</html>

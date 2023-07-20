@@ -1,0 +1,877 @@
+
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;500;&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&family=Roboto:wght@100;300;400;500&display=swap");
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+}
+/* body color */
+body {
+  background-color: #F7F8FE;
+}
+.btn{
+  padding: 10px;
+  width:150px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+.bg-white{
+  background-color: #ffffff;
+  color: #4540DB;
+  border:2px solid #4540DB;
+}
+nav i{
+  font-size:30px;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8%;
+	padding-right: 8%;
+	background-color: #F7F8FE;
+}
+.logo{
+	color: #4540DB;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px 0px 30px;
+}
+nav ul li a{
+	color: black;
+	text-decoration: none;
+  font-weight: 500;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #4540DB;
+	transition: .2s;
+  text-decoration: underline;
+}
+nav ul li a.active{
+	color: #4540DB;
+	text-decoration: underline;
+}
+.menu-btn{
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+/* css for company home page starts */
+.company_main_content {
+  width: 80%;
+  /* height: 1200px; */
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+.company_name_info,
+.company_about_info,
+.company_author_info {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.company_about_info {
+  border-top: 2px solid #9b9b9b;
+  border-bottom: 2px solid #9b9b9b;
+}
+.company_about_info_one_heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  margin-top: 25px;
+}
+.company_about_info_one_des {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-justify: justify;
+  margin-bottom: 0px;
+}
+.company_apply_btn {
+  /* padding: 7.0855px 12.6496px; */
+  background-color: #4540db;
+  width: 150px;
+  height: 60px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 44px;
+  /* css for inside text */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  line-height: 18px;
+  border-radius: 4px;
+}
+.company_author_info_title {
+  margin-top: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}
+.company_author_about_div1 {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red/; */
+}
+.company_author_name {
+  margin-left: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  /* text-align: bottom; */
+}
+.company_author_pos {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 15px;
+  /* text-align: top; */
+}
+/* .company_author_about_div > div > a > img {
+  height: 64px;
+  width: 64px;
+} */
+.company_name_info {
+  display: flex;
+  margin-bottom: 40px;
+}
+.company_job_container {
+  margin-top: 55px;
+  margin-left: 20px;
+}
+.company_name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 25px;
+}
+.company_post_name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  /* margin-top: 20px; */
+  font-size: 50px;
+  line-height: 70px;
+}
+.company_job_tags_container {
+  width: 100%;
+  /* height: 30px; */
+}
+.company_job_tags {
+  margin-top: 5px;
+  /* height: 28px; */
+  font-size: 20px;
+  padding: 10px;
+
+  border: 0px;
+  cursor: normal;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.one {
+  background-color: #efecfc;
+  color: #7846eb;
+}
+.two {
+  color: #2d4466;
+  background-color: #e6ecf5;
+}
+.three {
+  background-color: #e8f5ff;
+  color: #0c78ca;
+}
+.four {
+  background-color: #ffe8f0;
+  color: #f41e69;
+}
+.five {
+  background-color: #e3fffc;
+  color: #08beaa;
+}
+.company_salary {
+  width: 100%;
+  /* height: 60px; */
+  /* background-color: red; */
+}
+.company_salary {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  /* height: 50px; */
+  /* justify-content: center; */
+}
+.company_expected_salary {
+  /* top: 50%; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 23px;
+  font-weight: 400;
+  /* text-justify: left center; */
+
+  text-align: center;
+}
+.company_salary_amount {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bolder;
+  color: #0da999;
+  text-align: center;
+  margin-left: 12px;
+}
+.company_author_info {
+  padding-bottom: 70px;
+}
+/* css for company home page ends */
+/* 
+////////////////////////////////////////////////////////////////
+///////////////////////////
+*/
+/* css for about us starts */
+.about_us_main_content {
+  /* height: 1500px; */
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.about_us_content {
+  width: 100%;
+  /* height: 400px; */
+  background-color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.about_us_heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: -1.34311px;
+  text-align: center;
+  padding: 40px 0 50px 0;
+}
+.about_us_heading span {
+  color: #4540db;
+}
+
+.about_us_des {
+  max-width: 1000px;
+  /* background-color: red; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.about_us_des > p {
+  /* width: %; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.about_us_images_container {
+  height: 200px;
+  margin-bottom: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: space-between; */
+  flex-wrap: wrap;
+}
+.about_us_image_overlap {
+  margin-top: -310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.how_to_use {
+  /* height: 2300px; */
+  background-color: white;
+  padding-bottom: 80px;
+}
+.how_to_use_content {
+  width: 100%;
+  height: 300px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-evenly;
+}
+.how_to_use_content > div {
+  width: 30%;
+  height: 300px;
+  /* background-color: black; */
+  border: 1px solid #8e83dd;
+  /* box-sizing: border-box; */
+  border-radius: 18px;
+}
+.how_to_use_content > div > div {
+  display: flex;
+  justify-content: center;
+}
+.how_to_use_content > div > div > h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #4540db;
+}
+.how_to_use_content > div > div > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 5px 0px 5px;
+
+  text-align: center;
+  text-justify: justify;
+
+  color: #4f4f4f;
+}
+@media screen and (max-width: 1024px) {
+  .about_us_images_container img {
+    width: 40%;
+  }
+  .about_us_image_overlap {
+    margin-top: -240px;
+  }
+	 .our_mission_image_container {
+    margin-top: -20px;
+  }
+}
+/* css fot about us ends */
+
+/* 
+///////////////////////////
+////////////////////////////////
+*/
+
+/* css for job opening */
+.job_open_main_container {
+  margin-top: -20px;
+  /* height: 1000px; */
+  /* padding: 0px 64px 65px 64px; */
+}
+.job_open_job_info,
+.job_open_company_info,
+.job_open_job_des {
+  height: auto;
+  width: 100%;
+  padding: 40px 65px 50px 65px;
+  /* height: 500px; */
+  /* background-color: red; */
+}
+.job_open_company_info {
+  border-top: 2px solid rgba(41, 41, 41, 0.6);
+  border-bottom: 2px solid rgba(41, 41, 41, 0.6);
+  /* background-color: red; */
+  /* height: 1000px; */
+}
+.job_open_section_title {
+  /* margin-top: 40px; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #4540db;
+}
+.job_open_section_main_table {
+  width: 100%;
+  /* height: 100px; */
+  /* background-color: red; */
+}
+.job_open_section_main_table {
+  width: 100%;
+  /* height: 100px; */
+  /* background-color: red; */
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job_open_content_type_one {
+  margin-top: 16px;
+  width: 100%;
+}
+.job_open_content_type_two {
+  margin-top: 16px;
+  width: 48%;
+}
+
+.job_open_content_type_one h2 {
+  color: #292929;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.job_open_content_type_two h2 {
+  color: #292929;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.job_open_content_type_one input {
+  border: 1px solid rgba(41, 41, 41, 0.7);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+  padding: 16px;
+  /* css for font */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(17, 17, 17, 0.48);
+}
+.job_open_content_type_one textarea {
+  border: 1px solid rgba(41, 41, 41, 0.7);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 150px;
+  width: 100%;
+  padding: 16px;
+  /* css for font */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(17, 17, 17, 0.48);
+  resize: none;
+}
+
+.job_open_content_type_two input {
+  border: 1px solid rgba(41, 41, 41, 0.7);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+  padding: 16px;
+  /* css for font */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(17, 17, 17, 0.48);
+}
+.job_open_content_type_two select,
+.job_open_content_type_one select {
+  border: 1px solid rgba(41, 41, 41, 0.7);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+  padding: 16px;
+  /* css for font */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(17, 17, 17, 0.48);
+}
+.job_open_content_type_button {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  padding-bottom: 30px;
+}
+
+.job_open_content_submit_btn {
+  padding: 18px 28px;
+  width: 144px;
+  height: 61px;
+  background: #4540db;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  /* css for font size */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  color: white;
+  /* identical to box height, or 100% */
+}
+/* css for job open ends */
+/* 
+///////////////////////////
+*/
+
+/*css for edit profile starts */
+.edit_profle_main_conatiner {
+  /* height: 1000px; */
+  margin-top: -20px;
+}
+.edit_profile_heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 30px;
+  /* identical to box height, or 117% */
+
+  /* display: flex; */
+  /* align-items: center; */
+
+  color: #4540db;
+}
+.edit_profile_user_piture {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.user_profile_piture_update_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  position: static;
+  width: 140px;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+  background: #4540db;
+  border-radius: 4px;
+  border: 2px solid #4540db;
+  /* css for button text */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.user_profile_piture_remove_btn {
+  color: #eb5757;
+  background-color: white;
+}
+.job_open_content_type_two > h2 > span {
+  font-size: 18px;
+}
+.job_open_content_save_conatiner {
+  display: flex;
+  margin-top: 50px;
+}
+.job_open_content_save_conatiner input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 20px;
+  /* 
+  position: absolute; */
+  width: 164px;
+  height: 60px;
+  left: 64px;
+  top: 1484px;
+
+  background: #4540db;
+  border-radius: 4px;
+}
+.job_open_content_save_conatiner input:last-child {
+  color: #4540db;
+  background-color: white;
+  margin-left: 20px;
+}
+/*css for edit profile ends */
+/* 
+///////////////////////////
+////////////////
+*/
+
+/* css for profile starts */
+.profile_main_content {
+  /* height: 500px; */
+  margin-top: 50px;
+}
+.profile_name_main_conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile_name_conatiner {
+  display: flex;
+}
+.profile_name_conatiner img {
+}
+
+.profile_name_conatiner div {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 50%; */
+  max-width: 400px;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile_name_conatiner_name {
+  margin-top: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height, or 120% */
+
+  color: #292929;
+}
+.profile_name_conatiner_pos {
+  margin-bottom: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+
+  /* display: flex; */
+  /* align-items: center; */
+
+  color: black;
+
+  /* Inside auto layout */
+}
+.post {
+  color: #4540db;
+}
+.Edit_Profile_Button {
+  color: #4540db;
+}
+a {
+  text-decoration: none;
+}
+.profile_about {
+  margin-top: 16px;
+  padding: 7px 16px 7px 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #060606;
+}
+.links_conatiner_main {
+  margin-top: 40px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.links_conatiner_main a:first-child {
+  margin-right: 24px;
+}
+.links_conatiner_main a:last-child {
+  margin-left: 24px;
+}
+.profile_qualites_conatiner {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0 16px 0;
+}
+
+.profile_qualites_btn {
+  color: #4540db;
+  background: #f7f8fe;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+  padding: 16px;
+  margin: 0 12px 0 12px;
+  /* font-size: 25px; */
+  /* flex-wrap: nowrap; */
+  /* css for text */ /* Product Designer */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
+  text-align: center;
+
+  color: #4540db;
+}
+.profile_qualites_btn img {
+  margin-right: 16px;
+}
+/*  css for profile ends*/
+
+/*footer*/
+.footer img{
+	width: 28px;
+	height: 28px;
+	margin: 5px;
+}
+.footer .logos{
+  display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	cursor: pointer;
+}
+.footer{
+	border-top: 2px solid black;
+	background: #ffffff;
+	color:black;
+}
+.footer .col-4{
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer1 h1{
+	font-size: 40px !important;
+}
+.footer2 h1{
+  font-size: 25px;
+  font-weight: 550;
+}
+.footer2 h3{
+	font-size: 20px !important;
+  font-weight: 550;
+}
+
+#copyright{
+ text-align: center;
+	padding: 20px;
+	background: #4540DB;
+	color: #ffffff;
+	font-weight: 500;
+}
+#copyright h3{
+  font-size: 20px;
+}
+.footer .grid-wrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+	grid-gap: 2em;
+	padding: 2rem;
+}
+.footer h3{
+	color: #4540DB;
+
+}
+
+
+/*Navbar */
+@media screen and (max-width: 1100px){
+
+  .menu-btn{
+  display: block;
+  }
+  .nav-links{
+  position: absolute;
+  width: 100%;
+  height: 77vh;
+  background: #4540DB ;
+  top: 64px;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  transition: all .5s;
+  /* margin: ; */
+  color: #ffffff;
+  opacity: 0;
+  }
+  .show-sidebar{
+  opacity: 1;
+  }
+  .nav-links li{
+  display: block;
+  font-size: 30px;
+  margin: 10px;
+  margin-top: 60px;
+  }
+  .nav-links li a{
+    color: #ffffff;
+  }
+  .nav-links li a:hover{
+  color: #ffffff;
+  }
+  nav ul li a:hover{
+    color: #ffffff;
+    transition: .2s;
+    text-decoration: underline;
+  }
+  nav ul li a.active{
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  }

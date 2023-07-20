@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylet.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>Parmarth|Jobs</title>
+</head>
+<body>
+  <!---hero Section start---->
+		<nav>
+      <a  class="active" href="/home"><img src="images/Frame 415.png" class="logo"></a>
+			<ul class="nav-links">
+        <li><a href="/about">About Us</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="/job-open"><button class="btn bg-white">Post a job</button></a></li>
+        <li><i class="far fa-bell"></i></li>
+			</ul>
+		  <a href="/profile"><img src="images/profile (1).png"></a>
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+    <hr>
+
+    <section id="jobs-search">
+      <form action="/search" method="post">
+        <div class="jobs-left">
+          <div class="box">
+            <label for="job-search" class="job-search"></label>
+            <input type="text" name="jobSearch" class="job-search" id="job-search" placeholder='Search your job'>
+            </div>
+           <div class="box">
+            <label for="job-search" class="job-search"></label>
+            <input type="text" name="jobSearchLocation" class="job-search" id="job-search-location" placeholder="Search in location">
+            </div> 
+            <div class="box">
+            <button class="btn bg-blue" type="submit">Search</button>  
+            </div>
+        </div>
+      </form>
+      
+      <div class="jobs-right box">
+        <button class="btn bg-white"><i class="fas fa-plus"></i>Sort by</button>
+      </div>
+    </section>
+    <section id="job-content">
+      <div class="content-left">
+        <div class="category">
+          <h2>Category</h2>
+          <div class="category-items">
+            <p>Visually Impaired</p>
+            <p class="p1">320</p>
+          </div>
+          <div class="category-items">
+            <p>Hard Of Hearing</p>
+            <p class="p1">112</p>
+          </div>
+          <div class="category-items">
+            <p>Wheelchair Bound</p>
+            <p class="p1">32</p>
+          </div>
+          <div class="category-items">
+            <p>Dumb And Deaf</p>
+            <p class="p1">30</p>
+          </div>
+          <div class="category-items">
+            <a href="#"><h3 class="h-blue">View More</h3></a>
+          </div>
+        </div>
+        <div class="roles">
+          <h2>Role</h2>
+          <div class="role-items">
+            <input type="checkbox" name="role1">
+            <label for="role1" class="p2">Accountant</label><br>
+          </div>
+          <div class="role-items">
+            <input type="checkbox" name="role2">
+            <label for="role2" class="p2">Product Manager</label><br>
+          </div>
+          <div class="role-items">
+            <input type="checkbox" name="role3">
+            <label for="role3" class="p2">Designer</label><br>
+          </div>
+          <div class="role-items">
+            <input type="checkbox" name="role4">
+            <label for="role4" class="p2">Text</label><br>
+          </div>
+          <div class="role-items">
+            <input type="checkbox" name="role5">
+            <label for="role5" class="p2">Frontend Developer</label><br>
+          </div>
+          <div class="role-items">
+            <a href="#"><h3 class="h-blue">View More</h3></a>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn bg-blue">Apply</button>
+          <button class="btn bg-white">Reset</button>
+        </div>
+      </div>
+
+      <% posts.forEach(function(post) { %>
+          <div class="content-right">
+            <div class="company">
+                <div class="company-logo">
+                    <img src="<%= post.companyLogo %>">
+                </div>
+                <div class="company-details">
+                    <h2> <%= post.jobTitle %></h2>
+                    <p> <%= post.companyName %></p>
+                <div class="company-info">
+                    <div class="info-items">
+                        <i class="fas fa-rupee-sign"></i>
+                        <p>Rs. <%= post.jobSalary %></p>
+                    </div>
+                    <div class="info-items">
+                        <i class="fas fa-wheelchair"></i>
+                        <p><%= post.disability %></p>
+                    </div>
+                    <div class="info-items">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><%= post.jobLocation %></p>
+                    </div>
+                </div>
+                <p>We are looking for the right person to join our design team who will support.</p>
+                <div class="buttons">
+                    <button class="btn-static2 bg-lightblue h-blue p2"><i class="fas fa-redo"></i>2 days ago</button>
+                </div>
+            </div>
+            <div class="button">
+              <a href="/posts/<%=post.jobTitle%>"><button class="btn bg-blue">View details</button></a>
+            </div>
+        </div>
+    <% }); %>
+
+    </section>
+    <section class="footer">
+      <div class="grid-wrapper">
+        <div class="col-4 footer1">
+          <span><h1><img src="images/Logo.png" style="width:45px; height:45px;"/>&nbsp;Parmarth</h1></span>
+          <div class="logos">
+          <img src="images/logo5.png">
+          <img src="images/logo1.png">
+          <img src="images/logo2.png">
+          <img src="images/logo3.png">
+          <img src="images/logo4.png">
+        </div>
+      </div>
+          <div class="col-4 footer2">
+              <h1>Get In Touch</h1>
+              <a href="/about"><h3>About us</h3></a> 
+              <a href="/about"><h3>Our Mission</h3></a>
+              <a href="/about"><h3>Contact Us</h3></a>
+              <h3>How To Use</h3>
+          </div>
+          <div class="col-4 footer2">
+              <h1>Employer</h1>
+              <a href="/job-open"><h3>Post a Job</h3></a>
+              <a href="/about"><h3>Help</h3></a>
+              <h3>Chat With Us</h3>
+              <h3>Grievances</h3>
+          </div>
+    <div class="col-4 footer3">
+      <h1>Employee</h1>
+      <a href="/profile"><h3>Profile</h3></a> 
+      <a href="/profile"><h3>Your Account</h3></a>
+      <h3>Grievances</h3>
+      <a href="/job"><h3>Find a Job</h3></a>
+      <h3>Chat With Us</h3>
+  </div>
+</div>
+</section> 
+<hr> 
+  <footer id="copyright">
+     <h3>Made by Team Spam Bytes @2022. All Rights Reserved.</h3>
+</footer>
+  </body>
+</html>
